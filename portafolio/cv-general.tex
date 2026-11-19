@@ -1,0 +1,113 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[margin=0.72in]{geometry}
+\usepackage{enumitem,titlesec,xcolor}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\hypersetup{pdftitle={Sebastian Montemayor Trujillo - General CV},
+pdfauthor={Sebastian Montemayor Trujillo}}
+\definecolor{ink}{HTML}{17334C}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\raggedright
+\titleformat{\section}{\normalsize\bfseries\color{ink}}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{11pt}{5pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=2pt,topsep=4pt,parsep=0pt}
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2\par}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{ink} Sebastian Montemayor Trujillo}\\[5pt]
+\href{mailto:sebastianmontemayortrujillo@gmail.com}{sebastianmontemayortrujillo@gmail.com}
+\enspace\textbar\enspace
+\href{https://github.com/SebastianMontemayorTrujillo}{GitHub}
+\enspace\textbar\enspace
+\href{https://sebastianmontemayortrujillo.github.io/}{Personal website}
+\end{center}
+
+Mathematics undergraduate building web applications, AI agents, and tools for financial analysis. I teach algorithms and coach olympiad mathematics. I am interested in contributing accessible web tools to community organizations, including mental health nonprofits.
+
+\section*{Education}
+\entry{Universidad Nacional Autónoma de México (UNAM)}{Mexico City, Mexico}
+B.S. in Mathematics, Facultad de Ciencias \hfill 2026--Expected 2030\\
+Academic interests include artificial intelligence, software engineering, and scientific computing.
+
+\section*{Engineering Projects}
+\entry{Pasteles -- Conversational commerce agent}{2026}
+\textit{Python, Hermes Agent, Claude API, MCP, Telegram, SQLite}
+\begin{itemize}
+\item Built a Telegram assistant with structured extraction, deterministic quotes, and button-driven simulated payments. Business logic controls prices and payment states.
+\item Implemented consent-based per-user context, idempotent payment callbacks, and persistent API spending limits.
+\item Added conversation regression evaluations and a dashboard for agent versions, failures, costs, and results, with separate reporting for real-model and simulated runs.
+\end{itemize}
+
+\entry{COMPRIA -- Treasury and financial operations prototype}{2026}
+\textit{Python, FastAPI, SQLAlchemy, SQL Server, SQLite, Gemini API, JavaScript}
+\hfill\href{https://github.com/emmanuelmarioarevalolimon-bit/Cashflow-coach}{Code}
+\begin{itemize}
+\item Built document intake and transaction review, organized receivables and payables, and generated monthly reports for inflows, outflows, and net cash flow.
+\item Implemented relational models, SQLAlchemy queries, and SQL Server schemas with foreign keys and indexes. Added duplicate checks and source traceability, with confirmation before proposed records are saved.
+\item Integrated Python Monte Carlo forecasts and web scenario comparisons for collections, payments, and purchases. Used an LLM to draft proposals for human review.
+\end{itemize}
+
+\entry{Crab Chess -- Browser chess game}{2026}
+\textit{JavaScript, Vite, chess.js}
+\hfill\href{https://github.com/SebastianMontemayorTrujillo/xdchess}{Code}
+\begin{itemize}
+\item Built local multiplayer and a Minimax opponent, with interactive capture minigames. Ran AI search in a Web Worker to keep the interface responsive.
+\item Validated game rules, search behavior, and minigames with 65 automated tests.
+\end{itemize}
+
+\entry{Voces de la Plaza -- INEhack, Team Latas}{2026}
+\textit{Godot, GDScript, Python, open data from INE}
+\hfill\href{https://github.com/SebastianMontemayorTrujillo/inehack}{Code}
+\begin{itemize}
+\item Collaborated on a civic education game for web and Linux using Mexican voter participation data. Built state comparisons and PDF export for a citizen poster.
+\item Tested game logic, source data, and exported builds.
+\end{itemize}
+
+\newpage
+{\large\bfseries\color{ink} Sebastian Montemayor Trujillo}\par
+\section*{Teaching and Leadership}
+\entry{Mexican Olympiad in Informatics (OMI)}{Mexico (online)}
+\textit{Algorithms Teacher}\hfill 2026--Present
+\begin{itemize}
+\item Teach data structures, algorithms, and programming problem solving to students preparing for the olympiad.
+\end{itemize}
+
+\entry{Nuevo León State Mathematical Olympiad}{Nuevo León, Mexico}
+\textit{Olympiad Coach and Educational Material Creator}\hfill 2025--Present
+\begin{itemize}
+\item Coach students in mathematical problem solving and create training problems and educational materials for the state program.
+\item Selected as Deputy Leader of the Nuevo León team for the 2026 Mexican Mathematical Olympiad.
+\end{itemize}
+
+\section*{Honors and Awards}
+\begin{itemize}
+\item \textbf{International Mathematical Olympiad (IMO)} --- Bronze medal, 2026.
+\item \textbf{Iberoamerican Mathematical Olympiad} --- Gold medal, 2025.
+\item \textbf{Mexican Mathematical Olympiad (OMM)} --- Gold medals, 2024 and 2025.
+\item \textbf{Mexican Informatics Olympiad (OMI)} --- Gold medals, 2024 and 2025.
+\end{itemize}
+
+\section*{Certifications and Technical Training}
+\textbf{DataCamp}
+\begin{itemize}
+\item \href{https://www.datacamp.com/certification/ai-engineer-for-developers-associate}{AI Engineer for Developers Associate}. Training in LLMs, prompt engineering, AI integration, and software engineering.
+\item SQL Associate (in progress). SQL queries, joins, aggregation, and data cleaning.
+\end{itemize}
+\textbf{Claude Academy (Anthropic)}
+\begin{itemize}
+\item \href{https://academy.claude.com/courses/introduction-to-model-context-protocol}{Introduction to Model Context Protocol} and \href{https://academy.claude.com/courses/model-context-protocol-advanced-topics}{Model Context Protocol: Advanced Topics}.
+\item Python MCP servers and clients, tools, resources, prompts, sampling, notifications, roots, and transports.
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Programming and web.} Python, C++, SQL, JavaScript, GDScript, HTML, CSS, FastAPI, Vite.\\[4pt]
+\textbf{Data and analysis.} SQLAlchemy, relational modeling, SQL Server, SQLite, Excel, LibreOffice Calc, Monte Carlo simulation.\\[4pt]
+\textbf{Applied AI.} Claude and Gemini APIs, structured outputs, MCP and tool integration, evaluation harnesses, and human review workflows.\\[4pt]
+\textbf{Development tools.} Git, Linux, pytest, Godot, LaTeX.\\[4pt]
+\textbf{Languages.} Spanish (native), English (bilingual).
+\end{document}
